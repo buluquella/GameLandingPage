@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="landing-page" class="landing-page">
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dev-log">Dev Log</a></li>
+                <li><a href="#support">Support</a></li>
+                <li style="float:right"><a href="#about">About</a></li>
+              </ul>
+        </div>
+        <div class="content">
+            <h1><span>[GameName]</span><br>Coming Out Early 2024<br>Developed By<br><span style="color: #ff003c;">Buluquella Studios</span></h1>
+            <div class="main-character"></div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#collaborators">/Collaborators</a></li>
+                    <li><a href="#updates">/Updates</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div id="collaborators" class="collaborators">
+        <div class="collaborators-header">
+            /Collaborators
+        </div>
+        <ul class="director cut-edge-black">
+            <li>Directed By <br><span>Bulut Geris</span> </li>
+        </ul>
+        <div class="collaborators-wrapper">
+            <ul class="scnd">
+                <li>Art Director<br><span>wisperin</span></li>
+                <li>Envinroment Art <br><span>lofi_kier</span></li>
+                <li>Soundtrack <br><span>charlesmpro</span></li>
+                <li>Sound FX <br><span>terramarstudio</span></li>
+            </ul>
+            <ul class="scnd">
+                <li>Art <br><span>ninlay</span></li>
+                <li>Physics <br><span>xposition_dev</span></li>
+                <li>General Designer <br><span>bass1stas</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="updates" class="updates">
+        <div class="update-header">
+            /Updates
+        </div>
+        <div class="update-scroller">
+            <div class="updates-wrapper">
+                <h3 class="update-date">[13.02.2023]</h3>
+                <div class="update-img">
+                    <div id="overlay"></div>
+                </div>
+                <div class="text">
+                    <h3>Opening of the Website</h3>
+                    <p>Our website is live pals. We will use this website to inform you about our game. Stay in touch!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollTop");
+        
+        window.onscroll = function() {scrollFunction()};
+
+        
+        function scrollFunction() {
+            var bodyH = document.getElementById("landing-page");
+    
+            var sclientHeight = bodyH.clientHeight;
+          if (document.body.scrollTop > (sclientHeight-100) || document.documentElement.scrollTop > (sclientHeight-100)) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
