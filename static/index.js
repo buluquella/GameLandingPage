@@ -9,7 +9,6 @@ function scrollFunction() {
     var bodyW = document.getElementById("landing-page");
 
     var sclientHeight = bodyH.clientHeight;
-    var sclientWidth = bodyW.clientWidth;
 
     if (document.body.scrollTop > (sclientHeight-2) || document.documentElement.scrollTop > (sclientHeight-2)) {
         topButton.style.display = "block";
@@ -23,15 +22,4 @@ function scrollFunction() {
     } else {
         coffee.style.bottom = "-10%"
     }
-}
-
-
-var widthForty = (sclientWidth*(40/100));
-console.log(widthForty+"px")
-
-bigSwiper = document.getElementsByClassName("swiper-slide")
-bigSwiper.style.width = (widthForty+"px");
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
