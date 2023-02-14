@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Document</title>
+    <link rel="script" href="./static/index.js">
+    <title>Game Landing Page</title>
 </head>
 <body>
+    <div id="coffee" class="buy-me-a-coffee">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="buluquella" data-color="#fcf700" data-emoji=""  data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#000000" ></script>
+    </div>
     <div id="landing-page" class="landing-page">
-        <div class="nav-bar">
+        <div id="nav-bar" class="nav-bar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#dev-log">Dev Log</a></li>
-                <li><a href="#support">Support</a></li>
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#news">Dev Log</a></li>
+                <li><a target="_blank" href="https://www.buymeacoffee.com/buluquella">Support</a></li>
                 <li style="float:right"><a href="#about">About</a></li>
               </ul>
         </div>
@@ -24,7 +28,6 @@
             <div class="menu">
                 <ul>
                     <li><a href="#collaborators">/Collaborators</a></li>
-                    <li><a href="#news">/News</a></li>
                 </ul>
             </div>
         </div>
@@ -48,13 +51,24 @@
                 <li class="cut-edge-black">Art <br><span>ninlay</span></li>
                 <li class="cut-edge-black">Physics <br><span>xposition_dev</span></li>
                 <li class="cut-edge-black">General Designer <br><span>bass1stas</span></li>
+                <li class="cut-edge-black"></li>>Web Developer <br><span>jw'es</span></li>
             </ul>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="about-header">
+            /About Us
+        </div>
+        <div class="about-content">
+            We're a creative studio based in turkey. <br> we're making the [Game Name].<br> <br> if you want to support us financialy <br> please head to our <a target="_blank" href="https://www.buymeacoffee.com/buluquella">support</a> page 
+            
         </div>
     </div>
 
     <div id="news" class="news">
         <div class="new-header">
-            /News
+            /Dev Log
         </div>
         <div class="new-scroller">
             <div class="news-wrapper">
@@ -70,7 +84,7 @@
         </div>
     </div>
 
-    <div id="media" class="media">
+    <div id="media" class="media disabled">
         <div class="media-header">
             /Media
         </div>
@@ -98,36 +112,6 @@
     </div>
 
     <button onclick="topFunction()" id="scrollTop" title="Go to top">Top</button>
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("scrollTop");
-        
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            var bodyH = document.getElementById("landing-page");
-            var bodyW = document.getElementById("landing-page");
     
-            var sclientHeight = bodyH.clientHeight;
-            var sclientWidth = bodyW.clientWidth;
-
-            var widthForty = (sclientWidth*(40/100));
-            console.log(widthForty+"px")
-
-            bigSwiper = document.getElementsByClassName("swiper-slide")
-            bigSwiper.style.width = (widthForty+"px");
-
-          if (document.body.scrollTop > (sclientHeight-100) || document.documentElement.scrollTop > (sclientHeight-100)) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
 </body>
 </html>

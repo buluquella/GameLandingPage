@@ -14,7 +14,18 @@
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: #00fee8;
+    background-color: #fcf700;
+}
+
+.buy-me-a-coffee{
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    border: 2px solid #000;
+    transition: 0.5s;
+    border-radius: 13.2px;
+    z-index: 11;
+    transform: scale(0.8);
 }
 
 .landing-page{
@@ -22,8 +33,14 @@ body{
 }
 
 .nav-bar{
+    position: fixed;
+    width: 100vw;
+    background-color: #00fee8;
     display: flex;
     justify-content: center;
+    z-index: 10;
+    transition: all ease 0.2s;
+    
 }
 
 .nav-bar ul {
@@ -93,14 +110,7 @@ li a {
 }
 
 .active {
-    color: #000;
-    background-color: #00fee8;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    display: flex;
+    background-position: 0 100%;
 }
 
 .content{
@@ -234,6 +244,40 @@ li a {
 .collaborators ul li span{
     font-size: 24px;
     color: #fafafa;
+}
+
+.about{
+    background: #ff003c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.about-header{
+    font-size: 48px;
+    color: #000;
+    margin: 40px auto;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.about-content a{
+    color: #fcf700;
 }
 
 .news{
@@ -384,3 +428,9 @@ li a {
     border-radius: 4px;
 }
 
+
+
+
+.disabled{
+    display: none;
+}
