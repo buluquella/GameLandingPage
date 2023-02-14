@@ -17,6 +17,15 @@ body{
     background-color: #fcf700;
 }
 
+.logo{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url('../img/logo/logo.png');
+    background-size: contain;
+    left: 0px;
+}
+
 .buy-me-a-coffee{
     position: fixed;
     bottom: 15px;
@@ -32,13 +41,21 @@ body{
     height: 100vh;
 }
 
+.landing-page img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: -0.1%;
+    z-index: 11;
+}
+
 .nav-bar{
     position: fixed;
     width: 100vw;
     background-color: #00fee8;
     display: flex;
     justify-content: center;
-    z-index: 10;
+    z-index: 101;
     transition: all ease 0.2s;
     
 }
@@ -139,7 +156,7 @@ li a {
     left: 5%;
     width: 250px;
     height: 250px;
-    background-image: url('../img/McIdleFiverr\ copy_scaled_12x_pngcrushed\ \(1\).png');
+    background-image: url('../img/img-content/MainCharacter.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -149,6 +166,7 @@ li a {
     height: 100px;
     background-color: transparent;
     margin-top: 50px;
+    z-index: 100;
 }
 
 .menu ul{
@@ -160,9 +178,11 @@ li a {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    z-index: 100;
 }
 
 .menu ul li{
+    z-index: 100;
     margin: 10px;
 }
 
@@ -260,7 +280,7 @@ li a {
 .about-header{
     font-size: 48px;
     color: #000;
-    margin: 40px auto;
+    margin: 70px auto;
 }
 
 .about-content{
