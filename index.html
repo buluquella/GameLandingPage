@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="script" href="script.js">
+    <title>Game Landing Page</title>
+
 </head>
 <body>
     <div id="landing-page" class="landing-page">
@@ -24,7 +26,6 @@
             <div class="menu">
                 <ul>
                     <li><a href="#collaborators">/Collaborators</a></li>
-                    <li><a href="#updates">/Updates</a></li>
                 </ul>
             </div>
         </div>
@@ -48,12 +49,13 @@
                 <li>Art <br><span>ninlay</span></li>
                 <li>Physics <br><span>xposition_dev</span></li>
                 <li>General Designer <br><span>bass1stas</span></li>
+                <li>Web Developer <br><span>jw'es</span></li>
             </ul>
         </div>
     </div>
-    <div id="updates" class="updates">
+    <div id="dev-log" class="updates">
         <div class="update-header">
-            /Updates
+            /Dev Log
         </div>
         <div class="update-scroller">
             <div class="updates-wrapper">
@@ -68,29 +70,5 @@
             </div>
         </div>
     </div>
-    <button onclick="topFunction()" id="scrollTop" title="Go to top">Top</button>
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("scrollTop");
-        
-        window.onscroll = function() {scrollFunction()};
-
-        
-        function scrollFunction() {
-            var bodyH = document.getElementById("landing-page");
-    
-            var sclientHeight = bodyH.clientHeight;
-          if (document.body.scrollTop > (sclientHeight-100) || document.documentElement.scrollTop > (sclientHeight-100)) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
 </body>
 </html>
