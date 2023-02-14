@@ -24,7 +24,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="#collaborators">/Collaborators</a></li>
-                    <li><a href="#updates">/Updates</a></li>
+                    <li><a href="#news">/News</a></li>
                 </ul>
             </div>
         </div>
@@ -39,26 +39,27 @@
         </ul>
         <div class="collaborators-wrapper">
             <ul class="scnd">
-                <li>Art Director<br><span>wisperin</span></li>
-                <li>Envinroment Art <br><span>lofi_kier</span></li>
-                <li>Soundtrack <br><span>charlesmpro</span></li>
-                <li>Sound FX <br><span>terramarstudio</span></li>
+                <li class="cut-edge-black">Art Director<br><span>wisperin</span></li>
+                <li class="cut-edge-black">Envinroment Art <br><span>lofi_kier</span></li>
+                <li class="cut-edge-black">Soundtrack <br><span>charlesmpro</span></li>
+                <li class="cut-edge-black">Sound FX <br><span>terramarstudio</span></li>
             </ul>
             <ul class="scnd">
-                <li>Art <br><span>ninlay</span></li>
-                <li>Physics <br><span>xposition_dev</span></li>
-                <li>General Designer <br><span>bass1stas</span></li>
+                <li class="cut-edge-black">Art <br><span>ninlay</span></li>
+                <li class="cut-edge-black">Physics <br><span>xposition_dev</span></li>
+                <li class="cut-edge-black">General Designer <br><span>bass1stas</span></li>
             </ul>
         </div>
     </div>
-    <div id="updates" class="updates">
-        <div class="update-header">
-            /Updates
+
+    <div id="news" class="news">
+        <div class="new-header">
+            /News
         </div>
-        <div class="update-scroller">
-            <div class="updates-wrapper">
-                <h3 class="update-date">[13.02.2023]</h3>
-                <div class="update-img">
+        <div class="new-scroller">
+            <div class="news-wrapper">
+                <h3 class="new-date">[13.02.2023]</h3>
+                <div style="background-image: url('./img/img-update/WebsiteIsLive.png');" class="new-img">
                     <div id="overlay"></div>
                 </div>
                 <div class="text">
@@ -68,6 +69,34 @@
             </div>
         </div>
     </div>
+
+    <div id="media" class="media">
+        <div class="media-header">
+            /Media
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div style="width: 45%;" class="swiper-slide">
+                    <img src="img/media/bigImgTest.png" alt="">
+                </div>
+                <div class="swipper-small">
+                    <div class="swiper-slide">
+                        <img src="img/media/smallImgTest.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/media/smallImgTest.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/media/smallImgTest.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/media/smallImgTest.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <button onclick="topFunction()" id="scrollTop" title="Go to top">Top</button>
     <script>
         // Get the button
@@ -75,11 +104,19 @@
         
         window.onscroll = function() {scrollFunction()};
 
-        
         function scrollFunction() {
             var bodyH = document.getElementById("landing-page");
+            var bodyW = document.getElementById("landing-page");
     
             var sclientHeight = bodyH.clientHeight;
+            var sclientWidth = bodyW.clientWidth;
+
+            var widthForty = (sclientWidth*(40/100));
+            console.log(widthForty+"px")
+
+            bigSwiper = document.getElementsByClassName("swiper-slide")
+            bigSwiper.style.width = (widthForty+"px");
+
           if (document.body.scrollTop > (sclientHeight-100) || document.documentElement.scrollTop > (sclientHeight-100)) {
             mybutton.style.display = "block";
           } else {
