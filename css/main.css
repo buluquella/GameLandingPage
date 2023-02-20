@@ -61,7 +61,7 @@ body{
 }
 
 .nav-bar ul {
-    width: 400px;
+    width: 500px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -266,8 +266,70 @@ li a {
     color: #fafafa;
 }
 
-.about{
+.devlog{
     background: #ff003c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    
+}
+
+.devlog-header{
+    font-size: 47px;
+}
+
+.devlog-scroller{
+    background-color: #ff003c;
+    width: 90%;
+    max-height: 461px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    margin: 50px 0px;
+    border: 2px dashed #000;
+}
+
+.devlog .devlog-wrapper{
+    width: 360px;
+    height: 360px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+    border: 2px solid #000;
+}
+
+.devlog-date{
+    position: relative;
+    color: #fafafa;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+.devlog .devlog-wrapper .devlog-img{
+    width: 340px;
+    height: 200px;
+    background-color: #fafafa;
+    margin: 0 10px;
+    margin-top: 10px;
+
+    background: -webkit-linear-gradient(270deg, rgba(254,117,254,1) 0%, rgba(122,4,235,1) 50%, rgba(18,4,84,1) 100%);
+    -webkit-text-fill-color: transparent;
+
+    background-image: url("../img/img-new/WebsiteIsLive.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about{
+    background: #fcf700;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -279,7 +341,7 @@ li a {
 
 .about-header{
     font-size: 48px;
-    color: #000;
+    color: #ff003c;
     margin: 70px auto;
 }
 
@@ -297,69 +359,77 @@ li a {
 }
 
 .about-content a{
-    color: #fcf700;
+    color: #ff003c;
 }
 
-.news{
-    background: #fcf700;
+.support{
+    background-color: #000;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0 40px;
-    
 }
 
-.new-header{
-    font-size: 47px;
+.support-header{
+    font-size: 48px;
+    color: white;
+    margin: 70px auto;
 }
 
-.new-scroller{
-    background-color: #fcf700;
-    width: 90%;
-    max-height: 461px;
+.support-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
-    overflow-y: scroll;
-    margin: 50px 0px;
-    border: 2px dashed #000;
+    padding: 0 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+    color: white;
 }
 
-.news .news-wrapper{
-    width: 360px;
-    height: 360px;
-    background-color: #000;
+.support-content a{
+    color: #ff003c;
+}
+
+.contact{
+    background-color: #ff003c;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin:50px;
-    border: 2px solid #000;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 40px;
 }
 
-.new-date{
-    position: relative;
-    color: #fafafa;
-    margin: 0px 10px;
-    margin-top: 10px;
+.contact-header{
+    font-size: 48px;
+    color: black;
+    margin: 70px auto;
 }
 
-.news .news-wrapper .new-img{
-    width: 340px;
-    height: 200px;
-    background-color: #fafafa;
-    margin: 0 10px;
-    margin-top: 10px;
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+    color: black;
+}
 
-    background: -webkit-linear-gradient(270deg, rgba(254,117,254,1) 0%, rgba(122,4,235,1) 50%, rgba(18,4,84,1) 100%);
-    -webkit-text-fill-color: transparent;
-
-    background-image: url("../img/img-new/WebsiteIsLive.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.contact-content a{
+    color: white;
 }
 
 #overlay {
@@ -447,9 +517,6 @@ li a {
     padding: 15px;
     border-radius: 4px;
 }
-
-
-
 
 .disabled{
     display: none;
